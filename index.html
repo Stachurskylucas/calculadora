@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/normalize.css">
+    <title>Calculadora HTML CSS JS</title>
+</head>
+<body>
+    
+    <!-- Proyecto calculadora -->
+
+    <header>
+
+        
+
+    </header>
+
+    <main>
+
+        <div class="capa"></div>
+
+        <div class="container">
+
+            <div class="calculadora oscuro">
+
+                <div class="cambiar-tema active" id="cambiar-tema">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="bi bi-circle-fill" viewBox="0 0 16 16">
+                        <circle cx="8" cy="8" r="8"/>
+                    </svg>
+                </div>
+
+                <div class="display-screen">
+                    <div id="display">0</div>
+                </div>
+
+                <div class="botones">
+                    <table class="container-tabla">
+                        <tr class="filas">
+                            <td><button id="c" class="boton-calc borrar">C</button></td>
+                            <td><button id="de" class="boton-calc borrar">DE</button>
+                            <td><button id="porcentaje" class="boton-calc operador">%</button></td>
+                            </td>
+                            <td><button id="div" class="boton-calc operador">/</button></td>
+                        </tr>
+                        <tr class="filas">
+                            <td><button id="7" class="boton-calc numero">7</button></td>
+                            <td><button id="8" class="boton-calc numero">8</button></td>
+                            <td><button id="9" class="boton-calc numero">9</button></td>
+                            <td><button id="mul" class="boton-calc operador">*</button></td>
+                        </tr>
+                        <tr class="filas">
+                            <td><button id="4" class="boton-calc numero">4</button></td>
+                            <td><button id="5" class="boton-calc numero">5</button></td>
+                            <td><button id="6" class="boton-calc numero">6</button></td>
+                            <td><button id="res" class="boton-calc operador">-</button></td>
+                        </tr>
+                        <tr class="filas">
+                            <td><button id="1" class="boton-calc numero">1</button></td>
+                            <td><button id="2" class="boton-calc numero">2</button></td>
+                            <td><button id="3" class="boton-calc numero">3</button></td>
+                            <td><button id="sum" class="boton-calc operador">+</button></td>
+                        </tr>
+                        <tr class="filas">
+                            <td><button id="cambiar-signo" class="boton-calc coma"><span>+</span>/<span>-</span></button></td>
+                            <td><button id="cero" class="boton-calc numero">0</button></td>
+                            <td><button id="coma" class="boton-calc coma">.</button></td>
+                            <td><button id="igual" class="boton-calc igual">=</button></td>
+                        </tr>
+                    </table>
+                </div>
+
+            </div>
+
+        </div>
+
+    </main>
+
+    <footer>
+
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>

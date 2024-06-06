@@ -1,0 +1,146 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+}
+
+body {
+  background: linear-gradient(12deg, rgb(208, 29, 29) 0%, rgb(144, 16, 114) 35%, rgb(103, 6, 157) 66%, rgb(64, 0, 164) 100%);
+  background-repeat: no-repeat;
+}
+body .capa {
+  background-color: rgb(0, 0, 0);
+  opacity: 0.25;
+  width: 100vw;
+  height: 100vh;
+  position: absolute;
+  z-index: -1;
+}
+body .container {
+  z-index: 100;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+body .container .calculadora {
+  background-color: #1b0e30;
+  padding: 20px;
+  border-radius: 32px;
+  height: 720px;
+  width: 500px;
+  box-shadow: 1px 1px 50px rgb(0, 0, 0);
+}
+body .container .calculadora .cambiar-tema {
+  display: flex;
+  justify-content: flex-end;
+}
+body .container .calculadora .cambiar-tema .bi-circle-fill {
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
+  font-size: 30px;
+  fill: rgb(255, 255, 255);
+}
+body .container .calculadora .display-screen {
+  margin-top: 20px;
+  padding: 40px;
+  overflow-x: scroll;
+  position: relative;
+}
+body .container .calculadora .display-screen #display {
+  min-height: 50px;
+  text-align: right;
+  position: relative;
+  height: inherit;
+  letter-spacing: 2px;
+  top: 35px;
+  right: -15px;
+  font-weight: 500;
+  font-size: 2.5rem;
+  color: #ffffff;
+  user-select: none;
+}
+body .container .calculadora .display-screen::-webkit-scrollbar {
+  background-color: rgba(255, 255, 255, 0);
+  height: 8px;
+  border-radius: 10px;
+}
+body .container .calculadora .display-screen::-webkit-scrollbar-thumb {
+  background-color: rgb(255, 255, 255);
+  border-radius: 10px;
+}
+body .container .calculadora .botones {
+  height: 490px;
+  margin-top: 10px;
+}
+body .container .calculadora .botones .container-tabla {
+  width: 100%;
+  height: 100%;
+}
+body .container .calculadora .botones .container-tabla .filas td {
+  text-align: center;
+}
+body .container .calculadora .botones .container-tabla .filas td .boton-calc {
+  border: none;
+  width: 80px;
+  font-size: 28px;
+  font-weight: 500;
+  height: 80px;
+  border-radius: 40px;
+  cursor: pointer;
+  transition: transform 0.3s;
+}
+body .container .calculadora .botones .container-tabla .filas td .boton-calc:hover {
+  transform: scale(1.11);
+}
+body .container .calculadora .botones .container-tabla .filas td .operador {
+  background-color: rgb(207, 95, 179);
+  color: rgb(83, 5, 64);
+}
+body .container .calculadora .botones .container-tabla .filas td .numero {
+  background-color: rgb(214, 212, 212);
+}
+body .container .calculadora .botones .container-tabla .filas td .borrar {
+  background-color: rgb(223, 77, 77);
+  color: rgb(90, 9, 9);
+  text-shadow: 10px 10px 10px 20px rgb(194, 31, 31);
+}
+body .container .calculadora .botones .container-tabla .filas td .igual {
+  background-color: rgb(152, 80, 219);
+  color: rgb(52, 5, 70);
+}
+body .container .calculadora .botones .container-tabla .filas td .coma {
+  background-color: rgb(79, 82, 236);
+  color: rgb(6, 5, 70);
+}
+
+@media only screen and (max-width: 768px) {
+  body .container .calculadora {
+    height: 600px;
+    width: 400px;
+  }
+  body .container .calculadora .display-screen {
+    margin-top: 10px;
+    padding: 20px;
+  }
+  body .container .calculadora .display-screen #display {
+    letter-spacing: 2px;
+    top: 10px;
+    right: -1px;
+  }
+  body .container .calculadora .botones {
+    height: 300px;
+    margin-top: 10px;
+  }
+  body .container .calculadora .botones .container-tabla .filas td {
+    padding: 5px 0;
+  }
+  body .container .calculadora .botones .container-tabla .filas td .boton-calc {
+    width: 65px;
+    height: 65px;
+  }
+}
+
+/*# sourceMappingURL=styles.css.map */
